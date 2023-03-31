@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <header></header>
+    <main class="container">
+        <form id="form" action="">
+            <label for="kick">Digite um número de 0 a 10</label>
+            <input id="kick" type="number" maxlength="10" placeholder="0">
+            <button type="submit">Jogar</button>
+        </form>
+
+        <section class="resul-box" id="result">
+            <h2 id="status">Adivinhe o númeor sorteado</h2>
+            <span id="attempt">Tentativas: 0</span>
+
+        </section>
+        <button id="btnRestart" onclick="restart()">Jogar de novo</button>
+    </main>
+    <footer>GuessNumber, 2023 &copy </footer>
+</body>
+</html>
